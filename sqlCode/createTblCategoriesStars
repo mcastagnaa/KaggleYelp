@@ -1,0 +1,10 @@
+﻿SELECT	C.category
+	, AVG(BU.stars) AS AvgCatStars
+	, COUNT(BU.stars) AS CountCatStars
+	, STDDEV(BU.stars) AS StDevCatStars
+INTO tbl_category_stars
+FROM	tbl_train_business_cat AS C JOIN
+	tbl_train_business AS BU ON 
+		(C.business_id = BU.business_id)
+GROUP BY C.category
+;

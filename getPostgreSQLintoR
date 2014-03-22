@@ -1,0 +1,11 @@
+library(RPostgreSQL)
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, user= "matteo", password="sgomma", dbname="KYelp")
+rs <- dbSendQuery(con, "SELECT * FROM tbl_train_starset")
+
+df <- fetch(rs, n = -1)
+dim(df)
+dbHasCompleted(rs)
+dim(df)
+
+dbDisconnect(con)

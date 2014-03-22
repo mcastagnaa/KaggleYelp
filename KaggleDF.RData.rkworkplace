@@ -1,0 +1,10 @@
+base::::file:///home/matteo/KaggleYelp
+script::::file:///home/matteo/KaggleYelp/getPostgreSQLintoR
+workspace::sidebar,0::
+commandlog::sidebar,3::
+filebrowser::sidebar,0::
+pendingjobs::sidebar,4::
+console::sidebar,3::
+helpsearch::sidebar,3::
+debugframes::sidebar,1::
+debugconsole::sidebar,4::
