@@ -31,7 +31,7 @@ def main():
 				
 						
 		for key in dataset:
-			print key, dataset[key]
+			print(key, dataset[key])
 			
 
 if __name__ == '__main__':
